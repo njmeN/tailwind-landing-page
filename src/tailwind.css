@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .nav-items-hover{
+        @apply hover:text-DarkGrayishBlue;
+    }
+    .footer-items-hover{
+        @apply hover:text-BrightRed;
+    }
+    .feature-list-items{
+         @apply flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row;
+    }
+    .feature-heading-div{
+        @apply rounded-l-full bg-BrightRedLight md:bg-transparent;
+    }
+    .feature-heading-text{
+        @apply text-base font-bold md:mb-4 md:hidden;
+    }
+    .feature-heading-text-md{
+        @apply hidden mb-4 text-lg font-bold md:block;
+    }
+    .feature-number{
+        @apply px-4 py-2 text-white rounded-full md:py-1 bg-BrightRed;
+    }
+    .testimonials-card{
+        @apply flex flex-col items-center p-6 space-y-6 rounded-lg bg-VeryLightGray md:w-1/3;
+    }
+    .testimonials-text{
+        @apply text-sm text-DarkGrayishBlue;
+    }
+}
+@layer components{
+    .btn-style{
+        @apply  p-3 px-6 text-white rounded-full align-baseline bg-BrightRed hover:bg-BrightRedLight hover:text-black focus:outline-none;
+    }
+}
